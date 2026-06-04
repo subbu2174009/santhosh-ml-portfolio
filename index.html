@@ -20,19 +20,19 @@
     <style>
         /* CSS Variables & Theme Definitions */
         :root {
-            --bg-dark-950: #09090b; /* Zinc 950 - Obsidian Black */
-            --bg-dark-900: #121214; /* Zinc 900 */
-            --bg-dark-800: #1a1a1e; /* Zinc 800 */
-            --card-bg: rgba(18, 18, 20, 0.75); /* Charcoal Glass */
-            --card-bg-hover: rgba(26, 26, 30, 0.85);
-            --card-border: rgba(99, 102, 241, 0.18); /* Indigo transparent */
-            --card-border-active: rgba(16, 185, 129, 0.4); /* Emerald transparent */
+            --bg-dark-950: #080710; /* Midnight Violet-Black */
+            --bg-dark-900: #0f0e1a; /* Dark Space */
+            --bg-dark-800: #1a172e; /* Slate Violet */
+            --card-bg: rgba(15, 14, 26, 0.75); /* Plum Glass */
+            --card-bg-hover: rgba(26, 23, 46, 0.85);
+            --card-border: rgba(249, 115, 22, 0.18); /* Orange transparent */
+            --card-border-active: rgba(6, 182, 212, 0.4); /* Cyan transparent */
             
-            --accent-blue: #6366f1; /* Royal Indigo */
-            --accent-blue-hover: #4f46e5;
-            --accent-teal: #10b981; /* Emerald Mint */
-            --accent-teal-hover: #059669;
-            --accent-purple: #f43f5e; /* Electric Coral / Rose */
+            --accent-blue: #f97316; /* Cyber Orange */
+            --accent-blue-hover: #ea580c;
+            --accent-teal: #06b6d4; /* Electric Cyan */
+            --accent-teal-hover: #0891b2;
+            --accent-purple: #d946ef; /* Neon Magenta */
             
             --text-primary: #fafafa; /* Zinc 50 */
             --text-secondary: #a1a1aa; /* Zinc 400 */
@@ -41,7 +41,7 @@
             --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --font-mono: 'Fira Code', monospace;
             --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            --glow-shadow: 0 0 25px rgba(99, 102, 241, 0.15);
+            --glow-shadow: 0 0 25px rgba(249, 115, 22, 0.15);
         }
 
         /* Reset & Global Styles */
@@ -59,7 +59,7 @@
 
         /* Focus styles to prevent default browser white outline box on click */
         a:focus, button:focus, [role="button"]:focus {
-            outline: 2px solid rgba(99, 102, 241, 0.4);
+            outline: 2px solid rgba(249, 115, 22, 0.4);
             outline-offset: 2px;
         }
 
@@ -70,8 +70,8 @@
         body {
             background-color: var(--bg-dark-950);
             background-image: 
-                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.06) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.05) 0%, transparent 40%);
+                radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 40%);
             background-attachment: fixed;
             color: var(--text-primary);
             font-family: var(--font-sans);
@@ -1710,18 +1710,18 @@
                                                 <rect x="20" y="10" width="160" height="100" fill="rgba(14, 165, 233, 0.03)" />
                                                 <path d="M 20,80 Q 90,65 180,30" fill="none" stroke="rgba(239, 68, 68, 0.5)" stroke-width="1.5" />
                                                 <!-- Scatter points -->
-                                                <!-- Class 0 (Indigo) -->
-                                                <circle cx="40" cy="90" r="3" fill="#6366f1" />
-                                                <circle cx="60" cy="100" r="3" fill="#6366f1" />
-                                                <circle cx="50" cy="75" r="3" fill="#6366f1" />
-                                                <circle cx="85" cy="85" r="3" fill="#6366f1" />
-                                                <circle cx="110" cy="95" r="3" fill="#6366f1" />
-                                                <!-- Class 1 (Emerald) -->
-                                                <circle cx="120" cy="40" r="3" fill="#10b981" />
-                                                <circle cx="150" cy="30" r="3" fill="#10b981" />
-                                                <circle cx="130" cy="60" r="3" fill="#10b981" />
-                                                <circle cx="160" cy="45" r="3" fill="#10b981" />
-                                                <circle cx="95" cy="35" r="3" fill="#10b981" />
+                                                <!-- Class 0 (Orange) -->
+                                                <circle cx="40" cy="90" r="3" fill="#f97316" />
+                                                <circle cx="60" cy="100" r="3" fill="#f97316" />
+                                                <circle cx="50" cy="75" r="3" fill="#f97316" />
+                                                <circle cx="85" cy="85" r="3" fill="#f97316" />
+                                                <circle cx="110" cy="95" r="3" fill="#f97316" />
+                                                <!-- Class 1 (Cyan) -->
+                                                <circle cx="120" cy="40" r="3" fill="#06b6d4" />
+                                                <circle cx="150" cy="30" r="3" fill="#06b6d4" />
+                                                <circle cx="130" cy="60" r="3" fill="#06b6d4" />
+                                                <circle cx="160" cy="45" r="3" fill="#06b6d4" />
+                                                <circle cx="95" cy="35" r="3" fill="#06b6d4" />
                                                 
                                                 <!-- Axes -->
                                                 <line x1="20" y1="110" x2="180" y2="110" stroke="#475569" />
@@ -1734,19 +1734,19 @@
                                         <div style="background: rgba(3, 7, 18, 0.4); border: 1px solid var(--card-border); padding: 1rem; border-radius: 8px; text-align: center;">
                                             <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary); display: block; margin-bottom: 0.5rem;">Confusion Matrix</span>
                                             <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.5rem; max-width: 150px; margin: 1rem auto 0.8rem auto;">
-                                                <div style="background: rgba(16, 185, 129, 0.2); border: 1px solid var(--accent-teal); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
+                                                <div style="background: rgba(6, 182, 212, 0.2); border: 1px solid var(--accent-teal); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
                                                     <span style="display: block; font-size: 0.65rem; color: var(--text-secondary);">True Neg (0,0)</span>
                                                     <strong style="color: var(--text-primary); font-size: 1.05rem;">60</strong>
                                                 </div>
-                                                <div style="background: rgba(244, 63, 94, 0.05); border: 1px solid rgba(244, 63, 94, 0.2); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
+                                                <div style="background: rgba(217, 70, 239, 0.05); border: 1px solid rgba(217, 70, 239, 0.2); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
                                                     <span style="display: block; font-size: 0.65rem; color: var(--text-secondary);">False Pos (0,1)</span>
                                                     <strong style="color: var(--accent-purple); font-size: 1.05rem;">5</strong>
                                                 </div>
-                                                <div style="background: rgba(244, 63, 94, 0.05); border: 1px solid rgba(244, 63, 94, 0.2); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
+                                                <div style="background: rgba(217, 70, 239, 0.05); border: 1px solid rgba(217, 70, 239, 0.2); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
                                                     <span style="display: block; font-size: 0.65rem; color: var(--text-secondary);">False Neg (1,0)</span>
                                                     <strong style="color: var(--accent-purple); font-size: 1.05rem;">3</strong>
                                                 </div>
-                                                <div style="background: rgba(16, 185, 129, 0.2); border: 1px solid var(--accent-teal); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
+                                                <div style="background: rgba(6, 182, 212, 0.2); border: 1px solid var(--accent-teal); padding: 0.6rem; border-radius: 4px; font-size: 0.85rem;">
                                                     <span style="display: block; font-size: 0.65rem; color: var(--text-secondary);">True Pos (1,1)</span>
                                                     <strong style="color: var(--text-primary); font-size: 1.05rem;">95</strong>
                                                 </div>
@@ -1762,12 +1762,12 @@
                                                 <!-- Diagonal Baseline -->
                                                 <line x1="20" y1="110" x2="180" y2="10" stroke="#475569" stroke-width="1" stroke-dasharray="3,3" />
                                                 <!-- ROC Curve (AUC 0.94) -->
-                                                <path d="M 20,110 Q 25,20 180,10" fill="none" stroke="#10b981" stroke-width="2.5" />
+                                                <path d="M 20,110 Q 25,20 180,10" fill="none" stroke="#06b6d4" stroke-width="2.5" />
                                                 <!-- Axes -->
                                                 <line x1="20" y1="110" x2="180" y2="110" stroke="#475569" />
                                                 <line x1="20" y1="10" x2="20" y2="110" stroke="#475569" />
                                                 <!-- Area Text -->
-                                                <text x="110" y="75" fill="#10b981" font-size="8" font-weight="600">AUC = 0.965</text>
+                                                <text x="110" y="75" fill="#06b6d4" font-size="8" font-weight="600">AUC = 0.965</text>
                                             </svg>
                                             <p style="font-size: 0.75rem; color: var(--text-secondary); margin: 0.5rem 0 0 0;">True Positive Rate plotted against False Positive Rate curves.</p>
                                         </div>
@@ -3546,10 +3546,10 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
             // Pipeline SVG
             document.getElementById('pipelineSvgContainer').innerHTML = `
                 <svg width="100%" height="80" viewBox="0 0 740 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M90 40 H140" stroke="#6366f1" stroke-width="2" stroke-dasharray="3 3" />
-                    <path d="M230 40 H280" stroke="#6366f1" stroke-width="2" stroke-dasharray="3 3" />
-                    <path d="M370 40 H420" stroke="#6366f1" stroke-width="2" />
-                    <path d="M510 40 H560" stroke="#10b981" stroke-width="2" />
+                    <path d="M90 40 H140" stroke="#f97316" stroke-width="2" stroke-dasharray="3 3" />
+                    <path d="M230 40 H280" stroke="#f97316" stroke-width="2" stroke-dasharray="3 3" />
+                    <path d="M370 40 H420" stroke="#f97316" stroke-width="2" />
+                    <path d="M510 40 H560" stroke="#06b6d4" stroke-width="2" />
                     
                     <rect x="5" y="10" width="85" height="60" rx="6" fill="rgba(15, 23, 42, 0.7)" stroke="#1e293b" />
                     <text x="47" y="38" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Data Merging</text>
@@ -3563,12 +3563,12 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     <text x="325" y="38" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">One-Hot Encoding</text>
                     <text x="325" y="52" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">&gt; 100 features</text>
 
-                    <rect x="420" y="10" width="90" height="60" rx="6" fill="rgba(99, 102, 241, 0.1)" stroke="#6366f1" />
-                    <text x="465" y="38" fill="#6366f1" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Stratified 5-Fold</text>
+                    <rect x="420" y="10" width="90" height="60" rx="6" fill="rgba(249, 115, 22, 0.1)" stroke="#f97316" />
+                    <text x="465" y="38" fill="#f97316" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Stratified 5-Fold</text>
                     <text x="465" y="52" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">OOF Splits</text>
 
-                    <rect x="560" y="10" width="95" height="60" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
-                    <text x="607" y="38" fill="#10b981" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Ensemble Blending</text>
+                    <rect x="560" y="10" width="95" height="60" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="#06b6d4" />
+                    <text x="607" y="38" fill="#06b6d4" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Ensemble Blending</text>
                     <text x="607" y="52" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">LGB + Cat + XGB</text>
                 </svg>
             `;
@@ -3576,62 +3576,62 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
             // Feature Flow SVG
             document.getElementById('featureFlowSvgContainer').innerHTML = `
                 <svg width="100%" height="90" viewBox="0 0 680 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M125 45 H175" stroke="#6366f1" stroke-width="1.5" />
-                    <path d="M285 45 H335" stroke="#10b981" stroke-width="1.5" />
-                    <path d="M445 45 H495" stroke="#6366f1" stroke-width="1.5" />
+                    <path d="M125 45 H175" stroke="#f97316" stroke-width="1.5" />
+                    <path d="M285 45 H335" stroke="#06b6d4" stroke-width="1.5" />
+                    <path d="M445 45 H495" stroke="#f97316" stroke-width="1.5" />
                     
                     <rect x="5" y="15" width="120" height="60" rx="6" fill="rgba(15, 23, 42, 0.6)" stroke="#1e293b" />
                     <text x="65" y="42" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Raw Survey Fields</text>
                     <text x="65" y="55" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">7 behavioral / opinions</text>
 
-                    <rect x="175" y="15" width="110" height="60" rx="6" fill="rgba(99, 102, 241, 0.05)" stroke="#6366f1" />
-                    <text x="230" y="42" fill="#6366f1" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Composite Sums</text>
+                    <rect x="175" y="15" width="110" height="60" rx="6" fill="rgba(249, 115, 22, 0.05)" stroke="#f97316" />
+                    <text x="230" y="42" fill="#f97316" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Composite Sums</text>
                     <text x="230" y="55" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">additive scores</text>
 
-                    <rect x="335" y="15" width="110" height="60" rx="6" fill="rgba(99, 102, 241, 0.05)" stroke="#6366f1" />
-                    <text x="390" y="42" fill="#6366f1" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Interactions (Prod)</text>
+                    <rect x="335" y="15" width="110" height="60" rx="6" fill="rgba(249, 115, 22, 0.05)" stroke="#f97316" />
+                    <text x="390" y="42" fill="#f97316" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Interactions (Prod)</text>
                     <text x="390" y="55" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">risk * efficacy</text>
 
-                    <rect x="495" y="15" width="140" height="60" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
-                    <text x="565" y="38" fill="#10b981" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">total_behavioral_score</text>
-                    <text x="565" y="52" fill="#10b981" font-size="10" font-family="Outfit" text-anchor="middle">average_risk_opinion</text>
+                    <rect x="495" y="15" width="140" height="60" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="#06b6d4" />
+                    <text x="565" y="38" fill="#06b6d4" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">total_behavioral_score</text>
+                    <text x="565" y="52" fill="#06b6d4" font-size="10" font-family="Outfit" text-anchor="middle">average_risk_opinion</text>
                 </svg>
             `;
 
             // Ensemble Architecture SVG
             document.getElementById('ensembleSvgContainer').innerHTML = `
                 <svg width="100%" height="180" viewBox="0 0 700 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M125 35 H200" stroke="#6366f1" stroke-width="1.5" />
-                    <path d="M125 90 H200" stroke="#6366f1" stroke-width="1.5" />
-                    <path d="M125 145 H200" stroke="#6366f1" stroke-width="1.5" />
+                    <path d="M125 35 H200" stroke="#f97316" stroke-width="1.5" />
+                    <path d="M125 90 H200" stroke="#f97316" stroke-width="1.5" />
+                    <path d="M125 145 H200" stroke="#f97316" stroke-width="1.5" />
                     
-                    <path d="M320 35 L395 90" stroke="#10b981" stroke-width="1.5" />
-                    <path d="M320 90 L395 90" stroke="#10b981" stroke-width="1.5" />
-                    <path d="M320 145 L395 90" stroke="#10b981" stroke-width="1.5" />
+                    <path d="M320 35 L395 90" stroke="#06b6d4" stroke-width="1.5" />
+                    <path d="M320 90 L395 90" stroke="#06b6d4" stroke-width="1.5" />
+                    <path d="M320 145 L395 90" stroke="#06b6d4" stroke-width="1.5" />
                     
-                    <path d="M495 90 H560" stroke="#f43f5e" stroke-width="2" />
+                    <path d="M495 90 H560" stroke="#d946ef" stroke-width="2" />
                     
                     <rect x="5" y="15" width="120" height="150" rx="6" fill="rgba(15, 23, 42, 0.6)" stroke="#1e293b" />
                     <text x="65" y="45" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Feature Matrix</text>
                     <text x="65" y="65" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">Demographics</text>
                     <text x="65" y="85" fill="#64748b" font-size="8" font-family="Outfit" text-anchor="middle">Opinions & Behaviors</text>
-                    <text x="65" y="105" fill="#6366f1" font-size="8" font-family="Outfit" text-anchor="middle">stage1_seasonal_prob</text>
+                    <text x="65" y="105" fill="#f97316" font-size="8" font-family="Outfit" text-anchor="middle">stage1_seasonal_prob</text>
 
-                    <rect x="200" y="15" width="120" height="35" rx="4" fill="rgba(99, 102, 241, 0.05)" stroke="#6366f1" />
+                    <rect x="200" y="15" width="120" height="35" rx="4" fill="rgba(249, 115, 22, 0.05)" stroke="#f97316" />
                     <text x="260" y="36" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="500">LightGBM Classifier</text>
 
-                    <rect x="200" y="70" width="120" height="35" rx="4" fill="rgba(99, 102, 241, 0.05)" stroke="#6366f1" />
+                    <rect x="200" y="70" width="120" height="35" rx="4" fill="rgba(249, 115, 22, 0.05)" stroke="#f97316" />
                     <text x="260" y="91" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="500">CatBoost Classifier</text>
 
-                    <rect x="200" y="125" width="120" height="35" rx="4" fill="rgba(99, 102, 241, 0.05)" stroke="#6366f1" />
+                    <rect x="200" y="125" width="120" height="35" rx="4" fill="rgba(249, 115, 22, 0.05)" stroke="#f97316" />
                     <text x="260" y="146" fill="#f8fafc" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="500">XGBoost Classifier</text>
 
-                    <rect x="395" y="65" width="100" height="50" rx="6" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" />
-                    <text x="445" y="90" fill="#10b981" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Logit Blending</text>
+                    <rect x="395" y="65" width="100" height="50" rx="6" fill="rgba(6, 182, 212, 0.1)" stroke="#06b6d4" />
+                    <text x="445" y="90" fill="#06b6d4" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Logit Blending</text>
                     <text x="445" y="102" fill="#64748b" font-size="7" font-family="Outfit" text-anchor="middle">Meta Learner</text>
 
-                    <rect x="560" y="65" width="120" height="50" rx="6" fill="rgba(244, 63, 94, 0.1)" stroke="#f43f5e" />
-                    <text x="620" y="90" fill="#f43f5e" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Dual Probabilities</text>
+                    <rect x="560" y="65" width="120" height="50" rx="6" fill="rgba(217, 70, 239, 0.1)" stroke="#d946ef" />
+                    <text x="620" y="90" fill="#d946ef" font-size="10" font-family="Outfit" text-anchor="middle" font-weight="600">Dual Probabilities</text>
                     <text x="620" y="102" fill="#64748b" font-size="7" font-family="Outfit" text-anchor="middle">H1N1 & Seasonal</text>
                 </svg>
             `;
@@ -3683,13 +3683,13 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     
                     // Style by correlation strength
                     if (val === 1.0) {
-                        cell.style.backgroundColor = 'rgba(99, 102, 241, 0.6)'; // Royal Indigo
+                        cell.style.backgroundColor = 'rgba(249, 115, 22, 0.6)'; // Cyber Orange
                         cell.style.color = '#fff';
                     } else if (val >= 0.35) {
-                        cell.style.backgroundColor = 'rgba(16, 185, 129, 0.4)'; // Emerald Mint
+                        cell.style.backgroundColor = 'rgba(6, 182, 212, 0.4)'; // Electric Cyan
                         cell.style.color = '#fff';
                     } else if (val >= 0.2) {
-                        cell.style.backgroundColor = 'rgba(99, 102, 241, 0.18)'; // Soft Indigo
+                        cell.style.backgroundColor = 'rgba(249, 115, 22, 0.18)'; // Soft Orange
                         cell.style.color = 'var(--text-primary)';
                     } else {
                         cell.style.backgroundColor = 'rgba(255, 255, 255, 0.02)';
@@ -3748,7 +3748,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                         {
                             label: 'f(x) - Activation Function',
                             data: yValues,
-                            borderColor: '#10b981', // Emerald Mint
+                            borderColor: '#06b6d4', // Electric Cyan
                             borderWidth: 2.5,
                             fill: false,
                             pointRadius: 0,
@@ -3757,7 +3757,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                         {
                             label: "f'(x) - Derivative",
                             data: dyValues,
-                            borderColor: '#6366f1', // Royal Indigo
+                            borderColor: '#f97316', // Cyber Orange
                             borderWidth: 2,
                             borderDash: [5, 5],
                             fill: false,
@@ -3799,7 +3799,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
         Chart.defaults.font.family = "'Outfit', sans-serif";
         Chart.defaults.font.size = 11;
         Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(15, 23, 42, 0.95)';
-        Chart.defaults.plugins.tooltip.borderColor = 'rgba(99, 102, 241, 0.3)';
+        Chart.defaults.plugins.tooltip.borderColor = 'rgba(249, 115, 22, 0.3)';
         Chart.defaults.plugins.tooltip.borderWidth = 1;
         Chart.defaults.plugins.tooltip.titleColor = '#f8fafc';
         Chart.defaults.plugins.tooltip.bodyColor = '#e2e8f0';
@@ -3807,12 +3807,12 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
         // --- Chart 1: Target Variable Distribution ---
         const ctxTarget = document.getElementById('targetDistChart').getContext('2d');
         const h1n1Gradient = ctxTarget.createLinearGradient(0, 0, 0, 150);
-        h1n1Gradient.addColorStop(0, '#6366f1'); // Royal Indigo
-        h1n1Gradient.addColorStop(1, 'rgba(99, 102, 241, 0.1)');
+        h1n1Gradient.addColorStop(0, '#f97316'); // Cyber Orange
+        h1n1Gradient.addColorStop(1, 'rgba(249, 115, 22, 0.1)');
 
         const seasonalGradient = ctxTarget.createLinearGradient(0, 0, 0, 150);
-        seasonalGradient.addColorStop(0, '#10b981'); // Emerald Mint
-        seasonalGradient.addColorStop(1, 'rgba(16, 185, 129, 0.1)');
+        seasonalGradient.addColorStop(0, '#06b6d4'); // Electric Cyan
+        seasonalGradient.addColorStop(1, 'rgba(6, 182, 212, 0.1)');
 
         new Chart(ctxTarget, {
             type: 'bar',
@@ -3822,7 +3822,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     label: 'Uptake Percentage (%)',
                     data: [21.24, 46.56],
                     backgroundColor: [h1n1Gradient, seasonalGradient],
-                    borderColor: ['#6366f1', '#10b981'],
+                    borderColor: ['#f97316', '#06b6d4'],
                     borderWidth: 1.5,
                     borderRadius: 6,
                     barThickness: 35
@@ -3857,14 +3857,14 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     {
                         label: 'H1N1 Vaccine (%)',
                         data: [18.2, 19.5, 20.1, 23.4, 25.1],
-                        backgroundColor: '#6366f1', // Royal Indigo
+                        backgroundColor: '#f97316', // Cyber Orange
                         borderRadius: 4,
                         barThickness: 10
                     },
                     {
                         label: 'Seasonal Vaccine (%)',
                         data: [32.1, 36.4, 41.2, 51.5, 68.2],
-                        backgroundColor: '#10b981', // Emerald Mint
+                        backgroundColor: '#06b6d4', // Electric Cyan
                         borderRadius: 4,
                         barThickness: 10
                     }
@@ -3900,7 +3900,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 labels: ['<= $75,000, Above Poverty', '> $75,000', 'Below Poverty'],
                 datasets: [{
                     data: [54.3, 28.1, 17.6],
-                    backgroundColor: ['#6366f1', '#10b981', '#f43f5e'],
+                    backgroundColor: ['#f97316', '#06b6d4', '#d946ef'],
                     borderColor: 'rgba(3, 7, 18, 0.9)',
                     borderWidth: 2
                 }]
@@ -3926,8 +3926,8 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 datasets: [{
                     label: 'Missing Ratio (%)',
                     data: [47.97, 46.12, 46.88, 16.56, 8.08],
-                    backgroundColor: 'rgba(244, 63, 94, 0.35)', // Crimson Rose
-                    borderColor: '#f43f5e',
+                    backgroundColor: 'rgba(217, 70, 239, 0.35)', // Magenta/Fuchsia soft bg
+                    borderColor: '#d946ef',
                     borderWidth: 1,
                     borderRadius: 4,
                     barThickness: 20
@@ -3962,7 +3962,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 datasets: [{
                     label: 'Accuracy (%)',
                     data: [84.65, 83.92, 83.85, 83.78, 83.15, 81.24],
-                    backgroundColor: '#6366f1', // Royal Indigo
+                    backgroundColor: '#f97316', // Cyber Orange
                     borderRadius: 4,
                     barThickness: 20
                 }]
@@ -3995,7 +3995,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 datasets: [{
                     label: 'AUROC Score',
                     data: [0.8618, 0.8856, 0.8848, 0.8845, 0.8797, 0.8736],
-                    backgroundColor: '#10b981', // Emerald Mint
+                    backgroundColor: '#06b6d4', // Electric Cyan
                     borderRadius: 4,
                     barThickness: 20
                 }]
@@ -4029,7 +4029,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     {
                         label: 'H1N1 ROC (AUC = 0.843)',
                         data: [0.0, 0.45, 0.68, 0.78, 0.85, 0.90, 0.93, 0.96, 0.98, 0.99, 1.0],
-                        borderColor: '#6366f1', // Royal Indigo
+                        borderColor: '#f97316', // Cyber Orange
                         borderWidth: 2,
                         fill: false,
                         pointRadius: 0
@@ -4037,7 +4037,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     {
                         label: 'Seasonal ROC (AUC = 0.881)',
                         data: [0.0, 0.55, 0.78, 0.86, 0.91, 0.94, 0.96, 0.98, 0.99, 1.0, 1.0],
-                        borderColor: '#10b981', // Emerald Mint
+                        borderColor: '#06b6d4', // Electric Cyan
                         borderWidth: 2,
                         fill: false,
                         pointRadius: 0
@@ -4079,7 +4079,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     {
                         label: 'H1N1 (AP = 0.672)',
                         data: [1.0, 0.95, 0.91, 0.86, 0.80, 0.72, 0.64, 0.52, 0.38, 0.28, 0.21],
-                        borderColor: '#6366f1', // Royal Indigo
+                        borderColor: '#f97316', // Cyber Orange
                         borderWidth: 2,
                         fill: false,
                         pointRadius: 0
@@ -4087,7 +4087,7 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                     {
                         label: 'Seasonal (AP = 0.835)',
                         data: [1.0, 0.98, 0.96, 0.92, 0.88, 0.83, 0.78, 0.71, 0.62, 0.52, 0.46],
-                        borderColor: '#10b981', // Emerald Mint
+                        borderColor: '#06b6d4', // Electric Cyan
                         borderWidth: 2,
                         fill: false,
                         pointRadius: 0
@@ -4130,8 +4130,8 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 datasets: [{
                     label: 'Relative Feature Gain (%)',
                     data: [100.0, 92.4, 88.6, 74.2, 68.1, 55.4, 52.8, 48.9, 39.4, 32.1].reverse(),
-                    backgroundColor: 'rgba(16, 185, 129, 0.3)', // Emerald Mint soft bg
-                    borderColor: '#10b981',
+                    backgroundColor: 'rgba(6, 182, 212, 0.3)', // Electric Cyan soft bg
+                    borderColor: '#06b6d4',
                     borderWidth: 1.5,
                     borderRadius: 4,
                 }]
@@ -4159,8 +4159,8 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
         // --- Chart 10: Leaderboard Submission Timeline ---
         const ctxProg = document.getElementById('progressionChart').getContext('2d');
         const glowGradient = ctxProg.createLinearGradient(0, 0, 0, 200);
-        glowGradient.addColorStop(0, 'rgba(99, 102, 241, 0.25)'); // Royal Indigo glow
-        glowGradient.addColorStop(1, 'rgba(99, 102, 241, 0.0)');
+        glowGradient.addColorStop(0, 'rgba(249, 115, 22, 0.25)'); // Cyber Orange glow
+        glowGradient.addColorStop(1, 'rgba(249, 115, 22, 0.0)');
 
         new Chart(ctxProg, {
             type: 'line',
@@ -4169,9 +4169,9 @@ print("Smoothed Joint Ham Likelihood :", round(joint_ham, 4))</code></pre>
                 datasets: [{
                     label: 'Submission AUROC',
                     data: [0.8353, 0.8436, 0.8448],
-                    borderColor: '#6366f1', // Royal Indigo
+                    borderColor: '#f97316', // Cyber Orange
                     borderWidth: 2.5,
-                    pointBackgroundColor: '#10b981', // Emerald Mint
+                    pointBackgroundColor: '#06b6d4', // Electric Cyan
                     pointBorderColor: '#fff',
                     pointBorderWidth: 1.5,
                     pointRadius: 5,
